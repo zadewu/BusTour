@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Green Wheels a Travel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+
+        <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="#{request.contextPath}/resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="#{request.contextPath}/resources/css/style.css" rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+        <link href="#{request.contextPath}/resources/css/font-awesome.css" rel="stylesheet"/>
+        <!-- Custom Theme files -->
+        <script src="#{request.contextPath}/resources/js/jquery-1.12.0.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/bootstrap.min.js"></script>
+        <!--animate-->
+        <link href="#{request.contextPath}/resources/css/animate.css" rel="stylesheet" type="text/css" media="all"/>
+        <script src="#{request.contextPath}/resources/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <link type='text/css'  rel="stylesheet" href="#{request.contextPath}/resources/css/jquery-ui.css" />
+        <script src="#{request.contextPath}/resources/js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    </h:head>
+    <h:body>
+        <!--- header -->
+        <div class="header">
+            <div class="container">
+                <div class="logo wow fadeInDown animated" data-wow-delay=".5s">
+                    <a href="index.xhtml">Green <span>Wheels</span></a>	
+                </div>
+                <div class="lock fadeInDown animated" data-wow-delay=".5s"> 
+                    <li><i class="fa fa-lock"></i></li>
+                    <li><div class="securetxt">SAFE &amp; SECURE<br/> ONLINE PAYMENTS</div></li>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--- /header -->
+        <!--- footer-btm -->
+        <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
+            <div class="container">
+                <div class="navigation">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                            <nav class="cl-effect-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="about.html">Search Bus</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#myModal3">Check Booking</a></li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </nav>
+                        </div><!-- /.navbar-collapse -->	
+                    </nav>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--- /footer-btm -->
+        <!--- banner -->
+        <div class="banner-1">
+            <div class="container">
+                <h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-5 bann-info1">
+                <i class="fa fa-ticket"></i>
+                <h3>30% OFFER  WITH TICKET BOOKING FREE</h3>
+            </div>
+            <div class="col-md-7 bann-info">
+                <h2>Online Tickets with Zero Booking Fees</h2>
+                <h:form>
+                    <div class="ban-top">
+                        <div class="bnr-left">
+                            <label class="inputLabel">From</label>
+                            <h:selectOneMenu styleClass="grayTextNormal" value="#{tourController.tour.tourFrom}">
+                                <f:selectItems value="#{tourController.allFrom}"/> 
+                            </h:selectOneMenu>
+                        </div>
+                        <div class="bnr-left">
+                            <label class="inputLabel">To</label>
+                            <h:selectOneMenu styleClass="grayTextNormal" value="#{tourController.tour.tourTo}">
+                                <f:selectItems value="#{tourController.allTo}"/> 
+                            </h:selectOneMenu>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="ban-bottom">
+                        <div class="bnr-right">
+                            <label class="inputLabel">Date of Journey</label>
+                            <h:inputText styleClass="date" value="#{tourController.tour.tourDate}">
+                                <f:convertDateTime pattern="yyyy-MM-dd"/>
+                            </h:inputText>
+                        </div>
+                        <div class="bnr-right">
+                            <label class="inputLabel">Time<span class="opt">&nbsp;(Optional)</span></label>
+                            <h:inputText styleClass="timepicker" value="#{tourController.tour.tourTime}"/>
+                        </div>
+                        <div class="clearfix"></div>
+                        <script>
+            $(document).ready(function () {
+                $(".date").datepicker({dateFormat: 'yy-mm-dd'})
+                $('.timepicker').timepicker({
+                    timeFormat: 'h:mm p',
+                    interval: 60,
+                    minTime: '9',
+                    maxTime: '6:00pm',
+                    defaultTime: '9',
+                    startTime: '9:00',
+                    dynamic: false,
+                    dropdown: true,
+                    scrollbar: true
+                });
+            });
+                        </script>
+
+                        <!---/End-date-piker-->
+                    </div>
+                    <div class="sear">
+                        <h:commandButton value="Search Bus" styleClass="seabtn" action="#{tourController.findSpecific()}"/>
+                    </div>
+                </h:form>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--- /banner -->
+        <!--- bus-tp -->
+        <div class="bus-tp">
+            <div class="container">
+                <h2>Buses from #{tourController.tour.tourFrom} to #{tourController.tour.tourTo}</h2>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--- /bus-tp -->
+        <!--- bus-btm -->
+
+        <div class="bus-btm">
+            <div class="container">
+                <ul>
+                    <li class="trav"><a href="#">Travels</a></li>
+                    <li class="dept"><a href="#">Date</a></li>
+                    <li class="arriv"><a href="#">Time</a></li>
+                    <li class="seat"><a href="#">Seats</a></li>
+                    <li class="fare"><a href="#">Fare</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+        </div>
+        <!--- /bus-btm -->
+        <!--- bus-midd -->
+        <div class="bus-midd wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
+            <div class="container">
+
+                <!--- ul-first  -->
+                <ui:repeat value="#{tourController.findSpecific()}" var="t" varStatus="true">
+                    <h:form>
+                        <ul class="first">
+                            <li class="trav">
+                                <div class="bus-ic">
+                                    <h:graphicImage styleClass="img-responsive" value="resources/images/bus.png"/>
+                                </div>
+                                <div class="bus-txt">
+                                    <h4>#{tourController.tour.tourFrom} - #{tourController.tour.tourTo}</h4>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="dept">
+                                <div class="bus-ic1">
+                                    <i class="fa fa-calendar-o"></i>
+                                </div>
+                                <div class="bus-txt1">
+                                    <h4><h:outputText value="#{t.tourDate}"><f:convertDateTime pattern="yyyy/MM/dd" dateStyle="short" timeZone="GMT+7"/></h:outputText></h4>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="arriv">
+                                <div class="bus-ic1">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <div class="bus-txt2">
+                                    <h4>#{t.tourTime}</h4>
+                                </div>
+                            </li>
+                            <li class="seat">
+                                <div class="bus-ic3">
+                                    <h:graphicImage styleClass="img-responsive" value="resources/images/seat.png"/>
+                                </div>
+                                <div class="bus-txt3">
+                                    <h4>#{t.seat}</h4>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="fare">
+                                <div class="bus-txt4">
+                                    <h5>USD #{t.price}</h5>
+                                    <br/>
+                                    <h:commandButton value="Book" styleClass="seabtn" action="#{bookController.tourDetail()}">
+                                        <f:param name="id" value="#{t.tourID}"/>
+                                    </h:commandButton>
+                                    
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </h:form>
+                </ui:repeat>
+
+                <!--- /ul-first  -->
+
+            </div>
+        </div>
+        <!--- /bus-midd -->
+
+
+
+
+        <!---copy-right -->
+        <div class="copy-right">
+            <div class="container">
+
+                <div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+                    <ul>
+                        <li><a class="facebook" href="#"><span>Facebook</span></a></li>
+                        <li><a class="twitter" href="#"><span>Twitter</span></a></li>
+                        <li><a class="flickr" href="#"><span>Flickr</span></a></li>
+                        <li><a class="googleplus" href="#"><span>Google+</span></a></li>
+                        <li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+                    </ul>
+                </div>
+                <p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            </div>
+        </div>
+        <!--- /copy-right -->
+        <!-- write us -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+                    </div>
+                    <section>
+                        <div class="modal-body modal-spa">
+                            <h:form>
+                                <div class="writ">
+                                    <h4>SEARCH BOOKING DETAILS</h4>
+                                    <ul>
+                                        <li class="descrip">
+                                            <h:inputText value="#{bookController.phoneNo}"/>
+                                        </li>
+                                        <h:inputText styleClass="date1 descrip" value="#{bookController.detailDate}">
+                                            <f:convertDateTime pattern="yyyy-MM-dd"/>
+                                        </h:inputText>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                    <div class="sub-bn">
+                                        <h:commandButton value="Submit" styleClass="subbtn" action="#{bookController.reviewBooking()}"/>
+                                    </div>
+                                </div>
+                            </h:form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- //write us -->
+
+    </h:body>
+</html>
+

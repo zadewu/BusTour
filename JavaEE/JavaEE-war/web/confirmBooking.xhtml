@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Green Wheels a Travel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+
+        <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="#{request.contextPath}/resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="#{request.contextPath}/resources/css/style.css" rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+        <link href="#{request.contextPath}/resources/css/font-awesome.css" rel="stylesheet"/>
+        <!-- Custom Theme files -->
+        <script src="#{request.contextPath}/resources/js/jquery-1.12.0.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/bootstrap.min.js"></script>
+        <!--animate-->
+        <link href="#{request.contextPath}/resources/css/animate.css" rel="stylesheet" type="text/css" media="all"/>
+        <script src="#{request.contextPath}/resources/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <link type='text/css'  rel="stylesheet" href="#{request.contextPath}/resources/css/jquery-ui.css" />
+        <script src="#{request.contextPath}/resources/js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    </h:head>
+    <h:body>
+        <!--- header -->
+        <div class="header">
+            <div class="container">
+                <div class="logo wow fadeInDown animated" data-wow-delay=".5s">
+                    <a href="index.xhtml">Green <span>Wheels</span></a>	
+                </div>
+                <div class="lock fadeInDown animated" data-wow-delay=".5s"> 
+                    <li><i class="fa fa-lock"></i></li>
+                    <li><div class="securetxt">SAFE &amp; SECURE<br/> ONLINE PAYMENTS</div></li>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--- /header -->
+        <!--- footer-btm -->
+        <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
+            <div class="container">
+                <div class="navigation">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                            <nav class="cl-effect-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="about.html">Search Bus</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#myModal3">Check Booking</a></li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </nav>
+                        </div><!-- /.navbar-collapse -->	
+                    </nav>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--- /footer-btm -->
+        <!--- banner-1 -->
+        <div class="banner-1 ">
+            <div class="container">
+                <h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel</h1>
+            </div>
+        </div>
+        <!--- /banner-1 -->
+        <!--- privacy -->
+        <h:form>
+            <div class="privacy">
+                <div class="container">
+                    <h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Booking Details</h3>
+                    <h4 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">ID: #{bookController.tour.tourID}</h4>
+                    <h4 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Customer name: <h:inputText value="#{bookController.cus.cusName}"/></h4>
+                    <h4 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Customer phone: <h:inputText value="#{bookController.cus.cusPhone}"/></h4>
+                    <h4 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Date: #{bookController.tour.tourDate}</h4>
+                    <h4 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Time: #{bookController.tour.tourTime}</h4>
+                    <h4 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Number of seats: <h:inputText value="#{bookController.bookSeat}"/></h4>
+                    <h:commandButton value="Confirm" styleClass="seabtn" action="#{bookController.bookTour()}"/>
+                </div>
+            </div>
+        </h:form>
+        <!--- /privacy -->
+
+        <!---copy-right -->
+        <div class="copy-right">
+            <div class="container">
+
+                <div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+                    <ul>
+                        <li><a class="facebook" href="#"><span>Facebook</span></a></li>
+                        <li><a class="twitter" href="#"><span>Twitter</span></a></li>
+                        <li><a class="flickr" href="#"><span>Flickr</span></a></li>
+                        <li><a class="googleplus" href="#"><span>Google+</span></a></li>
+                        <li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+                    </ul>
+                </div>
+                <p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            </div>
+        </div>
+        <!--- /copy-right -->
+        <!-- write us -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+                    </div>
+                    <section>
+                        <div class="modal-body modal-spa">
+                            <h:form>
+                                <div class="writ">
+                                    <h4>SEARCH BOOKING DETAILS</h4>
+                                    <ul>
+                                        <li class="descrip">
+                                            <h:inputText value="#{bookController.phoneNo}"/>
+                                        </li>
+                                        <h:inputText styleClass="date1 descrip" value="#{bookController.detailDate}">
+                                            <f:convertDateTime pattern="yyyy-MM-dd"/>
+                                        </h:inputText>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                    <div class="sub-bn">
+                                        <h:commandButton value="Submit" styleClass="subbtn" action="#{bookController.reviewBooking()}"/>
+                                    </div>
+                                </div>
+                            </h:form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- //write us -->
+    </h:body>
+</html>
+

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <!--<h:outputStylesheet library="css" name="admin_layout.css"/>-->
+        <h:outputStylesheet name="bootstrap/dist/css/bootstrap.min.css"/>
+
+        <h:outputStylesheet name="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css"/>
+        <!-- toast CSS -->
+        <h:outputStylesheet name="plugins/bower_components/toast-master/css/jquery.toast.css"/>
+        <!-- morris CSS -->
+        <h:outputStylesheet name="plugins/bower_components/morrisjs/morris.css"/>
+        <!-- chartist CSS -->
+        <h:outputStylesheet name="plugins/bower_components/chartist-js/dist/chartist.min.css"/>
+        <h:outputStylesheet name="plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css"/>
+        <!-- animation CSS -->
+        <h:outputStylesheet name="css/animate.css"/>
+        <!-- Custom CSS -->
+        <h:outputStylesheet name="css/style_1.css"/>
+        <!-- color CSS -->
+        <h:outputStylesheet name="css/colors/default.css"/>
+
+        <!-- Latest compiled and minified CSS -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>-->
+        <!-- jQuery library -->
+        <h:outputScript name="plugins/bower_components/jquery/dist/jquery.min.js"/>
+        <!-- Bootstrap Core JavaScript -->
+        <h:outputScript name="bootstrap/dist/js/bootstrap.min.js"/>
+        <!-- Menu Plugin JavaScript -->
+        <h:outputScript name="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"/>
+
+        <!--slimscroll JavaScript -->
+        <h:outputScript name="js/jquery.slimscroll.js"/>
+
+        <!--Wave Effects -->
+        <h:outputScript name="js/waves.js"/>
+        <!--Counter js -->
+        <h:outputScript name="plugins/bower_components/waypoints/lib/jquery.waypoints.js"/>
+        <h:outputScript name="plugins/bower_components/counterup/jquery.counterup.min.js"/>
+        <!-- chartist chart -->
+        <h:outputScript name="plugins/bower_components/chartist-js/dist/chartist.min.js"/>
+        <h:outputScript name="plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"/>    
+        <!-- Sparkline chart JavaScript -->
+        <h:outputScript name="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"/>
+        <!-- Custom Theme JavaScript -->
+        <h:outputScript name="js/custom.min.js"/>
+        <!--<h:outputScript name="js/dashboard1.js"/>-->
+        <h:outputScript name="plugins/bower_components/toast-master/js/jquery.toast.js"/>
+    </h:head>
+    <h:body styleClass="fix-header">
+        <div id="wrapper">
+            <!-- Topbar header - style you can find in pages.scss -->
+            <!-- ============================================================== -->
+            <nav class="navbar navbar-default navbar-static-top m-b-0">
+                <div class="navbar-header">
+                    <div class="top-left-part">
+                        <!-- Logo -->
+                        <a class="logo" href="login.xhtml">
+                            <!-- Logo icon image, you can use font-icon also --><b>
+                                <!--This is dark logo icon--><h:graphicImage value="resources/plugins/images/admin-logo.png" styleClass="dark-logo"/> <!--This is light logo icon--><h:graphicImage value="resources/plugins/images/admin-logo-dark.png" styleClass="light-logo"/>
+                            </b>
+                            <!-- Logo text image you can use text also --><span class="hidden-xs">
+                                <!--This is dark logo text--><h:graphicImage value="resources/plugins/images/admin-text.png" styleClass="dark-logo"/><!--This is light logo text--><h:graphicImage value="resources/plugins/images/admin-text-dark.png" styleClass="light-logo"/>
+                            </span> </a>
+                    </div>
+                    <!-- /Logo -->
+                    <ul class="nav navbar-top-links navbar-right pull-right">
+                        <h:form>
+                            <h:commandLink value="Logout"
+                                           action="#{userController.logout}"
+                                           styleClass="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light"/>
+                        </h:form>
+
+
+                    </ul>
+                </div>
+                <!-- /.navbar-header -->
+                <!-- /.navbar-top-links -->
+                <!-- /.navbar-static-side -->
+            </nav>
+            <!-- End Top Navigation -->
+            <!-- Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav slimscrollsidebar">
+
+                    <ul class="nav" id="side-menu">
+                        <li style="padding: 70px 0 0;">
+                            <a href="store.xhtml" class="waves-effect active"><i class="fa fa-reorder fa-fw" aria-hidden="true"></i>Report</a>
+                        </li>                        
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar -->
+            <!-- Page Content -->
+            <!-- ============================================================== -->
+            
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <ui:insert name="content"/>
+                </div>
+                <footer class="footer text-center"> 2017 &#169; ABComestic</footer>
+            </div>
+        </div>
+    </h:body>
+</html>
+

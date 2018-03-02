@@ -1,0 +1,53 @@
+<ui:composition template="WEB-INF/templates/admin_template_1.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <ui:define name="menu">
+
+        <h:form id="menuForm">
+            <br/><br/>
+            <h:link value="Manage Tour" outcome="tour"/>
+            <br/><br/>
+            <!--<h:link value="Manage Product" outcome="product"/>-->
+            <br/><br/>
+            <!--<h:link value="Manage Employee" outcome="employee"/>-->
+        </h:form>
+    </ui:define>
+    <ui:define name="content">
+
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">Admin Dashboard</h4>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                </ol>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="white-box">
+                    <h3>WELCOME TO ADMIN DASHBOARD</h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $.toast({
+                    heading: 'Welcome to Green Wheels',
+                    text: 'Use the predefined ones, or specify a custom position object.',
+                    position: 'top-right',
+                    loaderBg: '#fff',
+                    icon: 'warning',
+                    hideAfter: 3500,
+                    stack: 6
+                })
+            })
+        </script>
+    </ui:define>
+</ui:composition>
